@@ -2,48 +2,49 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e6e6e6; /* Adjust based on your logo's colors */
+    background-color: #fff; /* Adjust based on your logo's colors */
 }
 
 header {
     background-color: #881c1c; /* Primary color from your logo */
     color: #fff;
-    padding: 10px 0;
+    padding: 0;
     display: flex;
-    align-items: center;
-}
-.header-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between; /* Space between logo and navigation */
-    max-width: 1200px; /* Optional: Set a max-width for better alignment */
-    margin: 0 auto; /* Center the content horizontally */
+    align-items: center; /* Center items vertically within the header */
+    justify-content: center;
+    position: relative; /* Needed for absolute positioning of the logo */
+    height: 60px; /* Set the height of the header */
 }
 
 #logo {
-    height: 50px; /* Adjust as needed */
-    margin-left: 20px; /* Adjust spacing as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Fit logo to the header height */
+    position: absolute; /* Absolute positioning within the header */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+}
+nav {
+    flex: 1; /* Allow nav to take remaining space */
+    display: flex;
+    justify-content: center; /* Center navigation links horizontally */
 }
 
-nav {
-    flex-grow: 1
-}
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Space between menu items */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make links bold */
 }
 
 main {
@@ -57,7 +58,7 @@ main {
 }
 
 .member {
-    background-color: #e6e6e6;
+    background-color: #fff;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
@@ -70,5 +71,9 @@ main {
 }
 
 h1 {
+    text-align: center;
     color: #881c1c;
+}
+p{
+    text-align: center;
 }
