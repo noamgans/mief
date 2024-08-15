@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Adjust based on your logo's colors */
+    background-color: #212721; /* Adjust based on your logo's colors */
 }
 
 header {
-    background-color: #003366; /* Primary color from your logo */
+    background-color: #881c1c; /* Primary color from your logo */
     color: #fff;
     padding: 10px 0;
 }
