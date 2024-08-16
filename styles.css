@@ -95,6 +95,31 @@ h1 {
     text-align: center;
     margin-top: 20px;
 }
+
+.president-section {
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.president-image {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.president-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.president-message {
+    width: 70%;
+}
+
 /* Add a media query for smaller screens */
 @media (max-width: 768px) {
     header {
