@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
         loadHomePage();
     });
-
+    
     document.getElementById("members-link").addEventListener("click", function(e) {
         e.preventDefault();
         loadMembersPage();
