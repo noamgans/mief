@@ -26,6 +26,7 @@ header {
     transform: translateY(-50%);
     left: 0%;
 }
+
 nav {
     flex: 1; /* Allow nav to take remaining space */
     display: flex;
@@ -56,22 +57,54 @@ main {
 .members {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
 }
 
 .member {
     background-color: #fff;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 200px;
+    height: 250px; /* Fixed height for all member boxes */
+    flex: 0 0 auto;
+    overflow: hidden; /* Hide any overflow content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .member img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
+.member h3 {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.member p {
+    color: #555;
+    font-size: 14px;
+    margin: 8px 0;
+}
+.member-link {
+    text-decoration: none;
+    color: inherit;
+}
+.member-link:hover .member{
+    transform: scale(1.05);
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +115,9 @@ h1 {
     text-align: center;
     color: #881c1c;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 500;
 }
 
 .left-half, .right-half {
@@ -94,21 +129,25 @@ h1 {
 .left-half h3, .right-half h3 {
     text-align: center;
     margin-top: 20px;
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .president-section {
     display: flex;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
     margin-top: 100px;
     background-color: #f9f9f9;
     border-radius: 8px;
     align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .president-image {
     width: 30%;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
 .president-image img {
@@ -118,9 +157,11 @@ h1 {
 
 .president-message {
     width: 70%;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-/* Add a media query for smaller screens */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -149,6 +190,26 @@ h1 {
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 10px 0;
+    }
+
+    .left-half, .right-half {
+        width: 100%;
+        padding: 0;
+    }
+
+    .president-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .president-image {
+        width: 50%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .president-message {
+        width: 100%;
     }
 }
