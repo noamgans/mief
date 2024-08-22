@@ -17,14 +17,12 @@ header {
 }
 
 #logo {
-    object-fit: contain;
     height: auto; /* Maintain aspect ratio */
-    max-height: 100%; /* Fit logo to the header height */
-    max-width: 30%;
+    max-height: 250%; /* Fit logo to the header height */
+    max-width: 100%;
     position: absolute; /* Absolute positioning within the header */
     top: 50%;
-    transform: translateY(-50%);
-    left: 0%;
+    transform: translateY(-45%);
 }
 
 nav {
@@ -211,12 +209,9 @@ h1 {
     #logo {
         position: static;
         transform: none;
-        max-width: 50%;
-        max-height: 40px;
-        margin-bottom: 10px;
+        max-width: 100%;
+        max-height: 100px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     nav {

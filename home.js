@@ -48,5 +48,5 @@ export function loadHomePage() {
         showCarouselItem(currentIndex);
     }
     showCarouselItem(currentIndex);
-    setInterval(nextCarouselItem, 10000); // Change slide every 5 seconds
+    setInterval(nextCarouselItem, 7500); // Change slide every 5 seconds
 }
